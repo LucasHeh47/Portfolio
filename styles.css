@@ -1,0 +1,215 @@
+body, html{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Amatic SC', cursive;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background-color: #0e1111;
+  color: white;
+  height: 100%;
+  width: 17.5vw;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav a, .nav-link {
+  color: white;
+}
+nav .nav-link {
+  display: flex;
+  padding: 0;
+  justify-content: space-evenly;
+  align-content: center;
+  font-size: 1.3em;
+}
+nav .nav-links:not(:first-child) {
+  padding: 5rem 0;
+}
+nav .nav-link i {
+  font-size: 1.8em;
+}
+
+main section {
+  padding: 1rem 3rem;
+}
+main {
+  position: relative;
+  width: 80vw;
+  left: 17.5vw;
+}
+main h2 {
+  font-size: 3em;
+}
+main p {
+  font-size: 1em;
+}
+
+@media screen and (min-width:900px) {
+  nav .header {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav #social-medias i {
+    font-size: 1.5em;
+    padding: 0 0.25em;
+  }
+  nav .header hr {
+    width: 50%;
+  }
+}
+
+/* TABLET VIEW */
+
+@media screen and (min-width:600px) and (max-width:900px) {
+  body, html {
+    flex-direction: column;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    background-color: #0e1111;
+    color: white;
+    width: 100%;
+    height: 10vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  nav .header #social-medias {
+    display: none;
+  }
+  nav .header hr {
+    display: none;
+  }
+  nav div {
+    display: flex;
+    flex-direction: row;
+  }
+  main {
+    left: 0;
+    top: 10vh;
+    width: 100%;
+  }
+}
+
+/* MOBILE */
+
+@media screen and (max-width:600px) {
+  body, html {
+    flex-direction: column;
+  }
+  nav {
+    position: fixed;
+    top: 90%;
+    padding: 0;
+    margin: 0;
+    background-color: #0e1111;
+    color: white;
+    width: 100%;
+    height: 10vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  nav .header, .nav-link p{
+    display: none;
+  }
+  nav .nav-link {
+    font-size: 2rem;
+  }
+  nav div {
+    display: flex;
+    flex-direction: row;
+  }
+  main {
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+
+/* END OF MOBILE */
+
+#main {
+  display: flex;
+  height: 100vh;
+  background:linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.7)
+        ), url("img/header.jpg");
+  background-position: center;
+  background-position-y: 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: white;
+
+}
+#main h1 {
+  font-weight: bold;
+  font-size: 5rem;
+}
+#main h2 {
+  font-size: 3rem;
+}
+
+#gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#gallery hr {
+  width: 8vw;
+}
+
+#education {
+  display: flex;
+  flex-direction: column;
+}
+#education hr {
+  width: 9vw;
+}
+#education img {
+  width: 7vw;
+}
+#education h3 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+#education div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main footer {
+  display: flex;
+  padding: 3rem;
+  flex-direction: column;
+  background-color: #0e0000;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
