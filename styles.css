@@ -64,7 +64,7 @@ main p {
   font-size: 1em;
 }
 
-@media screen and (min-width:900px) {
+@media screen and (min-width:991px) {
   nav .header {
     padding: 2rem 0;
     display: flex;
@@ -82,7 +82,7 @@ main p {
 
 /* TABLET VIEW */
 
-@media screen and (min-width:600px) and (max-width:900px) {
+@media screen and (min-width:768px) and (max-width:991px) {
   body, html {
     flex-direction: column;
   }
@@ -120,7 +120,7 @@ main p {
 
 /* MOBILE */
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:768px) {
   body, html {
     flex-direction: column;
   }
@@ -146,21 +146,17 @@ main p {
     display: none;
   }
   nav .nav-link {
-    font-size: 1.5rem;
+    font-size: 10rem;
   }
   nav .nav-links {
     padding: 0;
     display: none;
   }
-  nav .dropdownMenuButton1 {
-    
-  }
+  nav .dropdown-toggle::after {
+    content: none;
+}
   nav .dropdown{
     display: block;
-  }
-  nav .dropdown button {
-    color: white;
-    font-size: 1.5em;
   }
   main {
     left: 0;
@@ -203,11 +199,14 @@ main p {
   align-items: center;
 }
 #gallery hr {
-  width: 8vw;
+  width: 8em;
+}
+#gallery img {
+  padding-bottom: 2em;
 }
 
 #about-me hr {
-  width: 10vw;
+  width: 10em;
 }
 
 #education {
@@ -215,20 +214,25 @@ main p {
   flex-direction: column;
 }
 #education hr {
-  width: 9vw;
+  width: 9em;
 }
 #education img {
-  width: 7vw;
+  width: 7%;
 }
 #education h3 {
   font-size: 2.5em;
   font-weight: bold;
+  text-align: center
 }
 #education div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#past-projects hr {
+  width: 12em;
 }
 
 main footer {
@@ -239,4 +243,9 @@ main footer {
   color: white;
   text-align: center;
   justify-content: center;
+}
+main footer i {
+  color: white;
+  font-size: 1.5em;
+  padding: 0.35em;
 }
