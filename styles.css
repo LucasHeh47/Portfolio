@@ -70,7 +70,7 @@ main p {
   background:linear-gradient(
           rgba(0, 0, 0, 0.7),
           rgba(0, 0, 0, 0.7)
-        ), url("img/header.jpg");
+        ), url("img/myself-1.jpg");
   background-position: center;
   background-position-y: 30%;
   background-repeat: no-repeat;
@@ -99,7 +99,7 @@ main p {
   width: 8em;
 }
 #gallery img {
-  padding-bottom: 2.5em;
+  padding-bottom: 2em;
 }
 
 #about-me hr {
@@ -240,6 +240,13 @@ main footer i {
 }
   nav .dropdown{
     display: block;
+  }
+  nav .dropdown-menu {
+    background-color: #0e1111;
+    text-align: center;
+  }
+  nav .dropdown-item {
+      color: white;
   }
   main {
     left: 0;
