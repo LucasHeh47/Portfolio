@@ -64,6 +64,89 @@ main p {
   font-size: 1em;
 }
 
+#main {
+  display: flex;
+  height: 100vh;
+  background:linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.7)
+        ), url("img/header.jpg");
+  background-position: center;
+  background-position-y: 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: white;
+
+}
+#main h1 {
+  font-weight: bold;
+  font-size: 5rem;
+}
+#main h2 {
+  font-size: 3rem;
+}
+
+#gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#gallery hr {
+  width: 8em;
+}
+#gallery img {
+  padding-bottom: 2.5em;
+}
+
+#about-me hr {
+  width: 10em;
+}
+
+#education {
+  display: flex;
+  flex-direction: column;
+}
+#education hr {
+  width: 9em;
+}
+#education img {
+  width: 7%;
+}
+#education h3 {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center
+}
+#education div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#past-projects hr {
+  width: 12em;
+}
+
+main footer {
+  display: flex;
+  padding: 3rem;
+  flex-direction: column;
+  background-color: #0e0000;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+main footer i {
+  color: white;
+  font-size: 1.5em;
+  padding: 0.35em;
+}
+
 @media screen and (min-width:991px) {
   nav .header {
     padding: 2rem 0;
@@ -146,7 +229,7 @@ main p {
     display: none;
   }
   nav .nav-link {
-    font-size: 10rem;
+    font-size: 15rem;
   }
   nav .nav-links {
     padding: 0;
@@ -163,89 +246,11 @@ main p {
     top: 0;
     width: 100%;
   }
+  main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 /* END OF MOBILE */
-
-#main {
-  display: flex;
-  height: 100vh;
-  background:linear-gradient(
-          rgba(0, 0, 0, 0.7),
-          rgba(0, 0, 0, 0.7)
-        ), url("img/header.jpg");
-  background-position: center;
-  background-position-y: 30%;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  color: white;
-
-}
-#main h1 {
-  font-weight: bold;
-  font-size: 5rem;
-}
-#main h2 {
-  font-size: 3rem;
-}
-
-#gallery {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#gallery hr {
-  width: 8em;
-}
-#gallery img {
-  padding-bottom: 2em;
-}
-
-#about-me hr {
-  width: 10em;
-}
-
-#education {
-  display: flex;
-  flex-direction: column;
-}
-#education hr {
-  width: 9em;
-}
-#education img {
-  width: 7%;
-}
-#education h3 {
-  font-size: 2.5em;
-  font-weight: bold;
-  text-align: center
-}
-#education div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#past-projects hr {
-  width: 12em;
-}
-
-main footer {
-  display: flex;
-  padding: 3rem;
-  flex-direction: column;
-  background-color: #0e0000;
-  color: white;
-  text-align: center;
-  justify-content: center;
-}
-main footer i {
-  color: white;
-  font-size: 1.5em;
-  padding: 0.35em;
-}
