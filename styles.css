@@ -9,6 +9,10 @@ h1, h2, h3, h4 {
   font-family: 'Amatic SC', cursive;
 }
 
+p {
+  font-family: 'Roboto Flex', sans-serif;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -130,6 +134,10 @@ main p {
 
 #past-projects hr {
   width: 12em;
+}
+
+#contact hr {
+  width: 15%;
 }
 
 main footer {
@@ -257,6 +265,9 @@ main footer i {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  p {
+    font-size: 0.8em !important;
   }
 }
 
